@@ -6,10 +6,8 @@
 
 #### Pre-requisites
 
-1.NodeJS installed globally in the system.
+NodeJS installed globally in the system.
 https://nodejs.org/en/download/
-
-2.Install JDK (>1.8.x)
 
 ## Recommanded IDE
 
@@ -38,7 +36,7 @@ Just run the below command
 npm run test
 ```
 
-The above command would trigger tests in chrome and generate Serenity-BDD reports automatically!
+The above command would trigger api tests and generate BDD reports automatically!
 
 > The execution reports would be available in **target** folder
 
@@ -53,7 +51,7 @@ In this framework, we use 4 types of annotation to group the test cases as per o
 
 ## Run tests(Browser mode)
 
-Multiple browser configurations are available in **config/browser.config** folder and **package.json** has respective scripts to run tests in specific browsers
+API configuration is available in **config/api.config** folder and **package.json** has respective scripts to run tests in specific browsers
 
 ## Writing Features
 
