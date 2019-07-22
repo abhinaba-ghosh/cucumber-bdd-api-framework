@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowUnusedLabels": false,
+    "baseUrl": ".",
+    "paths": {
+      "test/*": ["./test/*"],
+      "src/*": ["./src/*"],
+      "config/*": ["./config/*"]
+    },
+    "declaration": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "transform",
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "target": "es6",
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "cucumber"]
+  },
+  "exclude": ["node_modules", "typescript"]
+}

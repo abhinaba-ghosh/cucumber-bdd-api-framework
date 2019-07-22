@@ -1,0 +1,10 @@
+{
+
+    "name": "Launch",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
+    "stopOnEntry": false,
+    "args": ["${workspaceRoot}/protractor.conf.js"]
+
+}

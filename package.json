@@ -1,0 +1,78 @@
+{
+    "name": "archer-api-bdd-report",
+    "version": "1.0.0",
+    "description": "API tests with BDD",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier src/**/*.ts test/**/*.ts config/**/*.ts --write",
+        "lint": "tslint -c tslint.json -p tsconfig.json",
+        "clean-report": "rimraf target/",
+        "commit": "git-cz",
+        "report": "ts-node ./src/support/cucumber/cucumber-reporter.ts",
+        "e2e": "cucumber-js test/e2e/features/demo.api.feature -p default",
+        "dir": "ts-node ./src/utils/report.helper.ts",
+        "test": "failsafe clean-js clean-report format lint build dir e2e report"
+    },
+    "license": "RSA",
+    "dependencies": {
+        "@types/app-root-path": "^1.2.4",
+        "@types/chai": "3.4.34",
+        "@types/chai-as-promised": "0.0.29",
+        "@types/chai-string": "^1.4.1",
+        "@types/cucumber": "^4.0.7",
+        "@types/node": "^10.7.1",
+        "app-root-path": "^2.2.1",
+        "chai": "3.5.0",
+        "chai-as-promised": "5.3.0",
+        "chai-string": "^1.5.0",
+        "cucumber": "1.3.2",
+        "cucumber-html-reporter": "^5.0.0",
+        "log4js": "1.1.0",
+        "log4js-protractor-appender": "^1.1.2",
+        "mkdirp": "^0.5.1",
+        "moment": "^2.24.0",
+        "request": "^2.88.0",
+        "request-promise-native": "^1.0.7",
+        "ts-node": "^8.3.0",
+        "tsconfig-paths": "^3.8.0"
+    },
+    "devDependencies": {
+        "@types/request-promise-native": "^1.0.16",
+        "commitizen": "^3.1.1",
+        "cz-conventional-changelog": "^2.1.0",
+        "husky": "^3.0.0",
+        "lint-staged": "^9.2.0",
+        "npm-failsafe": "^0.4.1",
+        "prettier": "^1.18.2",
+        "pretty-quick": "^1.11.1",
+        "rimraf": "2.5.4",
+        "tslint": "^5.18.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-no-unused-expression-chai": "^0.1.4",
+        "tslint-plugin-prettier": "^2.0.1",
+        "typescript": "^3.0.1"
+    },
+    "prettier": {
+        "singleQuote": true,
+        "printWidth": 150
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsc && lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*": [
+            "pretty-quick --staged"
+        ],
+        "*.ts": [
+            "npm run lint"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}

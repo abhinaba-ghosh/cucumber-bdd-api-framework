@@ -1,0 +1,12 @@
+# Node
+node_modules
+target/
+transform
+*.log
+drivers/IEDriverServer.exe
+unittest
+
+# Build artifacts
+.nyc_output
+lib
+staging

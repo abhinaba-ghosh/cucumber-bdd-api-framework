@@ -1,0 +1,23 @@
+{
+  "cucumberautocomplete.steps": ["test/**/*.ts", "src/**/*.ts"],
+  "cucumberautocomplete.syncfeatures": "test/e2e/features/*.feature",
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.stepsInvariants": true,
+  "cucumberautocomplete.skipDocStringsFormat": true,
+  "cucumberautocomplete.onTypeFormat": true,
+
+  "cucumberautocomplete.customParameters": [
+    {
+      "parameter": "\"(.*)\"",
+      "value": "\".*\""
+    }
+  ],
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then|And)\\(",
+  "editor.tabSize": 2,
+  "files.autoSave": "afterDelay"
+}

@@ -1,0 +1,16 @@
+ {
+
+     "accessibilityScore": 90,
+     "performanceScore": 75,
+     "bestPracticeScore": 75,
+     "progressiveWebAppScore": 75,
+     "SEOScore": 75,
+     "contrastCheck": "Pass",
+     "altTextCheck": "Pass",
+     "pageSpeedScore": 75,
+     "ariaAttributesCheck": "Pass",
+     "ariaAttributeValuesCheck": "Pass",
+     "tabIndexCheck": "Pass",
+     "logicalTabOrderCheck": "Pass",
+     "vulnerabilities": "Pass"
+ }
