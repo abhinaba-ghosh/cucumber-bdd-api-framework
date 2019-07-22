@@ -135,24 +135,10 @@ export = function performAPIValidations() {
 
 ```
 
-## Cucumber Hooks
-
-Following method takes screenshot on failure of each scenario
-
-```ts
-import { browser } from "protractor";
-
-export= function(){
-this.Before({timeout: 100 * 1000}, async function(scenario)  {
-    await browser.manage().window().maximize();
-    await browser.get(browser.baseUrl);
-});
-
-```
 
 ## HTML Reports
 
-Currently this project has been integrated with Serenity-JS. Reports produced are user-friendly and BDD structured.
+Reports produced are user-friendly and BDD structured. HTML report will be avilabe at target/cucumber/html folder
 
 ![cucumberreporterscreen](./docs/images/report.png)
 
