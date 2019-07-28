@@ -1,4 +1,4 @@
-# Archer API BDD Framewok
+# Avenger API BDD Framewok
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -13,10 +13,6 @@ https://nodejs.org/en/download/
 
 VSCode
 
-## Recommanded VSCode Extensions
-
-![extensionscreen](./docs/images/vscode_extensions.PNG)
-
 ## Setup Scripts
 
 - Clone the repository into a folder
@@ -28,6 +24,13 @@ npm install
 
 - All the dependencies from package.json and ambient typings would be installed in node_modules folder.
 
+## Format And Lint
+
+```
+npm run format
+
+npm run lint
+```
 ## Run tests
 
 Just run the below command
@@ -40,16 +43,8 @@ The above command would trigger api tests and generate BDD reports automatically
 
 > The execution reports would be available in **target** folder
 
-## Test Annotation
 
-In this framework, we use 4 types of annotation to group the test cases as per our expectation.
-
-1. @smoke - to group test cases for smoke tests [applicable to scenario & feature]
-2. @regression - to group test cases for regression tests [applicable to scenario & feature]
-3. @jira-epic/feature-id - [applicable to feature]
-4. @jira-us-id - [applicable to scenario]
-
-## Run tests(Browser mode)
+## Run tests
 
 API configuration is available in **config/api.config** folder and **package.json** has respective scripts to run tests in specific browsers
 
@@ -147,7 +142,7 @@ For contributors who want to improve this repo by contributing some code, report
 ## License
 
 ```
-RSA License
+Abhinaba Ghosh
 
 Copyright (c) 2019
 ```
